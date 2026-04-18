@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace with the final production domain if different.
+Sitemap: https://ayushkathane.in/sitemap.xml
