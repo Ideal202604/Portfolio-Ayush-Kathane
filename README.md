@@ -46,10 +46,10 @@ Deployed on Vercel. Push to `main` and it goes live automatically. No extra setu
 
 ---
 
-## Get In Touch
-
-[ayushkathane.vercel.app]() · [GitHub](https://github.com/ayushkathane) · [LinkedIn](https://linkedin.com/in/ayushkathane)
-
+## Team
+- Director : Pankaj Kathane
+- UI/UX Designer: Janbaj Jadhav
+- Developer: Wajid Daud Tamboli
 ---
 
 *Built with care, caffeine, and way too many animation tweaks.*
