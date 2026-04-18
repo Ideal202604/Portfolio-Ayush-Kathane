@@ -1174,6 +1174,10 @@ const SplitFlapText = ({ text, delay = 0, className = "" }: { text: string; dela
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const appointmentMessage = encodeURIComponent(
+    "Hello Ayush Kathane,\n\nI would like to book a legal appointment.\n\nAppointment Details:\n- Full Name:\n- Contact Number:\n- Email:\n- Legal Matter Type (Corporate / M&A / Contract / Property / Other):\n- Brief Case Summary:\n- Preferred Date:\n- Preferred Time:\n- Consultation Mode (Phone / Video / In-person):\n\nPlease confirm availability and next steps.\n\nThank you."
+  );
+  const whatsappUrl = `https://wa.me/917218035276?text=${appointmentMessage}`;
 
   useEffect(() => {
     if (isDarkMode) {
@@ -1486,7 +1490,9 @@ export default function App() {
           <div className="mt-6 md:mt-8 flex flex-col md:flex-row gap-6 md:gap-12 items-end">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 flex-grow w-full md:w-auto">
               <a 
-                href="mailto:kathane.ayush1@gmail.com" 
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex justify-between items-center px-6 py-4 border-2 border-white/20 hover:border-yellow-500 hover:bg-yellow-500 hover:text-black transition-all duration-500 text-base md:text-xl font-black group uppercase"
               >
                 <span><SplitFlapText text="SEND ENQUIRY" delay={2.6} /></span>
